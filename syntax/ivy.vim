@@ -50,9 +50,12 @@ syntax keyword ivyKeywords
     \ global
     \ alias
     \ process
+    \ common
+    \ class
+    \ field
 
 syntax keyword ivyStructure
-      \ struct
+    \ struct
 
 " Numbers
 syntax match ivyNumber "\v<\d+>"
