@@ -1,5 +1,5 @@
 " indent/ivy.vim
-" Taken from the swift.vim plugin.
+" Taken from the ivy.vim plugin.
 " Original author: Keith Smiley
 
 if exists("b:did_indent")
@@ -47,13 +47,13 @@ function! s:IsExcludedFromIndent()
 endfunction
 
 function! s:IsSyntaxNameExcludedFromIndent(name)
-  return a:name ==# "swiftComment" || a:name ==# "swiftString" || a:name ==# "swiftInterpolatedWrapper" || a:name ==# "swiftMultilineInterpolatedWrapper" || a:name ==# "swiftMultilineString"
+  return a:name ==# "ivyComment" || a:name ==# "ivyString" || a:name ==# "ivyInterpolatedWrapper" || a:name ==# "ivyMultilineInterpolatedWrapper" || a:name ==# "ivyMultilineString"
 endfunction
 
 function! s:IsCommentLine(lnum)
     return synIDattr(synID(a:lnum,
           \     match(getline(a:lnum), "\\S") + 1, 0), "name")
-          \ ==# "swiftComment"
+          \ ==# "ivyComment"
 endfunction
 
 function! SwiftIndent(...)

@@ -51,6 +51,9 @@ syntax keyword ivyKeywords
     \ alias
     \ process
 
+syntax keyword ivyStructure
+      \ struct
+
 " Numbers
 syntax match ivyNumber "\v<\d+>"
 syntax match ivyNumber "\v<(\d+_+)+\d+(\.\d+(_+\d+)*)?>"
@@ -92,3 +95,4 @@ highlight default link ivyNumber Number
 highlight default link ivyBoolean Boolean
 highlight default link ivyOperator Operator
 highlight default link ivyImports Include
+highlight default link ivyStructure Structure
