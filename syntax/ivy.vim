@@ -74,6 +74,8 @@ syntax match ivyOperator "\v\>"
 syntax match ivyOperator "\v\<\="
 syntax match ivyOperator "\v\=\>"
 syntax match ivyOperator "\v\.\."
+syntax match ivyOperator "\v\:"
+syntax match ivyOperator "\v\;"
 
 syntax keyword ivyImports include
 
