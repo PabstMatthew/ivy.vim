@@ -53,6 +53,7 @@ syntax keyword ivyKeywords
     \ common
     \ class
     \ field
+    \ in
 
 syntax keyword ivyStructure
     \ struct
