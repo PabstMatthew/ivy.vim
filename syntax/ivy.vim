@@ -15,7 +15,6 @@ syntax keyword ivyKeywords
     \ call
     \ action
     \ function
-    \ returns
     \ definition
     \ interpret
     \ invariant
@@ -24,15 +23,11 @@ syntax keyword ivyKeywords
     \ forall
     \ axiom
     \ relation
-    \ isolate
     \ specification
     \ implementation
     \ implement
-    \ invariant
     \ require
     \ ensure
-    \ after
-    \ before
     \ around
     \ var
     \ module
@@ -42,11 +37,7 @@ syntax keyword ivyKeywords
     \ instantiate
     \ this
     \ object
-    \ import
-    \ export
     \ parameter
-    \ with
-    \ include
     \ global
     \ alias
     \ process
@@ -54,6 +45,43 @@ syntax keyword ivyKeywords
     \ class
     \ field
     \ in
+    \ debug
+    \ variant
+    \ of
+    \ globally
+    \ eventually
+    \ temporal
+    \ function
+    \ class
+    \ object
+    \ method
+    \ execute
+    \ destructor
+    \ some
+    \ maximizing
+    \ minimizing
+    \ private
+    \ using
+    \ property
+    \ ghost
+    \ alias
+    \ trusted
+    \ this
+    \ attribute
+    \ scenario
+    \ proof
+    \ named
+    \ fresh
+    \ returns
+    \ mixin
+    \ before
+    \ after
+    \ isolate
+    \ with
+    \ export
+    \ import
+    \ delegate
+    \ include
 
 syntax keyword ivyStructure
     \ struct
