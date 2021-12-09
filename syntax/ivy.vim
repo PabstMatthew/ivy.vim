@@ -86,6 +86,9 @@ syntax keyword ivyKeywords
 syntax keyword ivyStructure
     \ struct
 
+" Strings (only really used for debug statements
+syntax region ivyString start=/"/ skip=/\\\\\|\\"/ end=/"/ oneline
+
 " Numbers
 syntax match ivyNumber "\v<\d+>"
 syntax match ivyNumber "\v<(\d+_+)+\d+(\.\d+(_+\d+)*)?>"
@@ -124,6 +127,7 @@ syntax keyword ivyBoolean
 highlight default link ivyKeywords Keyword
 highlight default link ivyTodos Todo
 highlight default link ivyComment Comment
+highlight default link ivyString String
 highlight default link ivyNumber Number
 highlight default link ivyBoolean Boolean
 highlight default link ivyOperator Operator
